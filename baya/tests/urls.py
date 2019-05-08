@@ -1,7 +1,7 @@
-from django.core.urlresolvers import reverse_lazy
 from django.conf.urls import include, url
 from django.contrib.auth.views import login
 from django.views.generic import ListView
+from django.urls import reverse_lazy
 from django.contrib import admin
 admin.autodiscover()
 
