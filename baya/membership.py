@@ -111,7 +111,7 @@ class DynamicRolesNode(RolesNode):
         class BlogPost(models.Model):
             title = models.CharField(...)
             body = models.TextField(...)
-            category = models.ForeignKey(Category)
+            category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
         def _category_name(category_id):
             return {Category.objects.get(id=category_id).name}
